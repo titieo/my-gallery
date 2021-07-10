@@ -1,0 +1,130 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+  font-family: "Montserrat", "Gill Sans", "Gill Sans MT", Calibri,
+    "Trebuchet MS", sans-serif;
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 2rem 0 1.5rem;
+}
+.profile__image {
+  border-radius: 2rem;
+  max-width: 10rem;
+}
+.profile__name {
+  color: #4e5150;
+  font-size: 1.4rem;
+  margin: 1rem 0 0.5rem;
+}
+.profile__location {
+  color: #a9a9a9;
+  font-size: 1rem;
+  margin: 0;
+}
+.profile__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.profile__stat {
+  background: #e5e5e5;
+  border-radius: 1rem;
+  display: inline-flex;
+  margin: 2rem 0;
+}
+.profile__info {
+  padding: 1rem 0.5rem;
+  margin: 0 auto;
+}
+.profile__number {
+  font-size: 1.2rem;
+  display: block;
+  color: #4e5150;
+}
+.profile__cat {
+  font-size: 1.4rem;
+  display: block;
+  color: #bdbdbd;
+}
+.gallery {
+  display: grid;
+  grid-template: repeat(3, minmax(10rem, 1fr)) / repeat(3, 1fr);
+  place-content: center;
+  display: grid;
+  gap: 1rem;
+  max-width: 114rem;
+  margin: 0 auto 2rem;
+}
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.gallery__image-2 {
+  grid-column: span 2;
+}
+.gallery__image-3 {
+  grid-column: span 2;
+}
+.gallery__image-4 {
+  grid-row: span 2;
+}
+@media screen and (min-width: 768px) {
+  .profile__image {
+    border-radius: 3rem;
+    max-width: 15rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile {
+    font-weight: 600;
+    margin: 3rem 0 6rem;
+  }
+  .profile__name {
+    font-size: 2.4rem;
+    margin: 2rem 0 1rem;
+  }
+  .profile__location {
+    font-size: 1.4rem;
+  }
+  .profile__stats {
+    gap: 1rem;
+  }
+  .profile__image {
+    border-radius: 5rem;
+    max-width: 20rem;
+  }
+  .profile__stat {
+    margin: 2rem 0;
+  }
+  .profile__info {
+    padding: 1.5rem 2.5rem;
+    margin: 0 auto;
+  }
+  .profile__number {
+    font-size: 1.8rem;
+  }
+  .profile__cat {
+    font-size: 1.4rem;
+  }
+  .gallery {
+    display: grid;
+    grid-template: repeat(3, minmax(10rem, 1fr)) / repeat(3, 1fr);
+    place-content: center;
+    display: grid;
+    gap: 2rem;
+    max-width: 114rem;
+    margin: 0 auto;
+  }
+}
